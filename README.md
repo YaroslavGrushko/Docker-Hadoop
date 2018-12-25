@@ -39,7 +39,7 @@ NOTE: Checking if I’m in the home/work directory should be there.
       **$ HADOOP_PREFIX/bin/hadoop jar units.jar hadoop.ProcessUnits input_dir output_dir**  
 8. I look through the output files in the output folder of the Hadoop:  
 **$ HADOOP_PREFIX/bin/hadoop fs -ls output_dir/**
-9. Browse the part-00000 file, which is located in the output folder of the hadup:
+9. Browse the part-00000 file, which is located in the output folder of the hadup:  
              **$ HADOOP_PREFIX/bin/hadoop fs -cat output_dir/part-00000**
 10. Copy the output folder from the Hadup to the host (in the home/work working folder)
       **$ HADOOP_PREFIX/bin/hadoop dfs -get output_dir/ /home/work/**

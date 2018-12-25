@@ -1,0 +1,13 @@
+version: '2'
+services:
+
+  ## hadoop service
+  home:
+    image: zoltannz/hadoop-ubuntu:2.8.1
+    # build:
+     # context: ./server/
+    volumes:
+      - ./server:/home/work
+    container_name: home
+    tty: true
+    

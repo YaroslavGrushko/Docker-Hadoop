@@ -19,7 +19,7 @@ Docker installed
 
 1. We picked up Ubuntu on the docker, Hadoop + java on it (at the same time, the work files {ProcessUnits.java, hadoop-core-1.2.1.jar, sample.txt} were thrown into home/work)  
   a. docker-compose up  
-  b. Connect to the container via **docker-compose exec router sh**  
+  b. Connect to the container via **docker-compose exec home sh**  
 2. I went to the home/work directory and created the units folder there  
 3. Compiled ProcessUnits.java, while specifying the library file via -classpath hadooop-core-1.2.1.jar, and the target folder as -d units  
   a. **$ javac -classpath hadoop-core-1.2.1.jar -d units ProcessUnits.java** 

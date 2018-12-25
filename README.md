@@ -33,13 +33,13 @@ Docker installed
 **$ HADOOP_PREFIX / bin / hadoop fs -rm input_dir / sample.txt  
 $ HADOOP_PREFIX / bin / hadoop dfs -rmr output_dir**}  
 6. I will check everything that lies in input_dir in the hadup:  
-   **$ HADOOP_PREFIX / bin / hadoop fs -ls input_dir //**  
+   **$ HADOOP_PREFIX / bin / hadoop fs -ls input_dir /**  
 7. Now I run (compiled earlier .jar file) using the hadup, while at the same time I submit input_dir / sample.txt to the input:
 NOTE: Checking if I’m in the home / work directory should be there.  
       **$ HADOOP_PREFIX / bin / hadoop jar units.jar hadoop.ProcessUnits input_dir output_dir**  
 8. I look through the output files in the output folder of the Hadoop:  
-**$ HADOOP_PREFIX / bin / hadoop fs -ls output_dir //**
+**$ HADOOP_PREFIX / bin / hadoop fs -ls output_dir /**
 9. Browse the part-00000 file, which is located in the output folder of the hadup:
              **$ HADOOP_PREFIX / bin / hadoop fs -cat output_dir / part-00000**
 10. Copy the output folder from the Hadup to the host (in the home / work working folder)
-      **$ HADOOP_PREFIX / bin / hadoop dfs -get output_dir / / home / work //**
+      **$ HADOOP_PREFIX / bin / hadoop dfs -get output_dir / / home / work /**

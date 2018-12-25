@@ -30,7 +30,7 @@ Docker installed
 5. Copy the input file sample.txt from the home/work directory to the folder you just created in Hadup:  
 **$ HADOOP_PREFIX/bin/hadoop fs -put /home/work/sample.txt input_dir**  
 {(optional, you can delete the file):  
-**$ HADOOP_PREFIX/bin/hadoop fs -rm input_dir/sample.txt  
+**$ HADOOP_PREFIX/bin/hadoop fs -rm input_dir/sample.txt   
 $ HADOOP_PREFIX/bin/hadoop dfs -rmr output_dir**}  
 6. I will check everything that lies in input_dir in the hadup:  
    **$ HADOOP_PREFIX/bin/hadoop fs -ls input_dir/**  
